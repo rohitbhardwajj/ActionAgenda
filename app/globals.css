@@ -1,33 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* globals.css */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Add your global styles here */
+html,body{
+    height: 100%;
+    background-color: black;
+}
+.form{
+    position: relative;
+    left: 64%;
+    border: 2px solid black;
+    height: 52px;
+   
+}
+.btn{
+    height: 55px;
+    
+}
+.list{
+   
+   
+    border-radius: 33px;
+    color: white;
+    padding: 22px;
+}
+.inputField{
+    display: flex;
+    /* border-bottom: 5px solid white; */
+}
+.my-3{
+    height: 52px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.td{
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-danger{
+    height: 35px;
+    width: 64px;
+    padding-right: 62px;
+    margin-top: 11px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.set{
+    /* border: 1px solid red; */
+    width: 68rem;
+    
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.title{
+    /* border: 1px solid blue; */
+    width: 35%;
+    text-wrap: wrap;
+}
+.desc{
+    /* border: 1px solid pink; */
+    width: 44%;
+    margin-left: 13vw;
+    text-wrap: wrap;
 }
